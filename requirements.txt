@@ -1,0 +1,8 @@
+opencv-python==4.9.0.80
+torch
+transformers==4.53.1
+pillow==11.0.0
+numpy==1.26.4
+ultralytics==8.3.53
+# For OpenAI CLIP (used in normal_clip.py), install from GitHub:
+git+https://github.com/openai/CLIP.git 
