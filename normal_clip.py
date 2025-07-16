@@ -15,7 +15,7 @@ from pathlib import Path
 # --------------------------------------------------------------------------- #
 # 1.  Input video (EDIT ONLY THIS)
 # --------------------------------------------------------------------------- #
-VIDEO_PATH = Path(r"E:\VS Code Folders\i3d\videos\vid_747.mp4")
+VIDEO_PATH = Path(r"E:\VS Code Folders\i3d\videos\vid_772.mp4")
 
 # --------------------------------------------------------------------------- #
 # 2.  Auto‑generate output paths
@@ -33,7 +33,7 @@ print("Output  log   →", OUTPUT_CSV_PATH)   # Path for the detailed log file
 
 FRAME_SKIP = 1                                 # Analyze every N‑th frame for speed
 SMOOTHING_WINDOW_SIZE = 15                     # Temporal consensus window
-CONFIDENCE_THRESHOLD = 0.5                     # ≥80 % off‑road votes → state change
+CONFIDENCE_THRESHOLD = 0.5                     # ≥50 % off‑road votes → state change
 
 # --------------------------------------------------------------------------- #
 # 2. Load CLIP (OpenAI repo, not Hugging Face)
@@ -60,7 +60,7 @@ ON_ROAD_PROMPTS = [
     'A photo of a rally car driving on a road between green fields',
     'A photo of a rally car driving very fast on road',
     'A photo of a rally car driving very quickly on road with motion blur in the background',
-    'A photo of a rallycar on the road',
+    'A photo of a rally car on the road',
     'A rally car driving on a road',
 ]
 
