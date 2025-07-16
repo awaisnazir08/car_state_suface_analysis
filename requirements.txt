@@ -8,6 +8,10 @@ pillow==11.0.0
 numpy==1.26.4
 ultralytics==8.3.53
 ndjson==0.3.1
+pandas==2.2.3
+scikit-learn==1.6.1
+matplotlib==3.10.3
+seaborn==0.13.2
 
 # For OpenAI CLIP (used in normal_clip.py), install from GitHub:
 git+https://github.com/openai/CLIP.git 
