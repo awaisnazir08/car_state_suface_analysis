@@ -15,7 +15,7 @@ from pathlib import Path
 # --------------------------------------------------------------------------- #
 # 1.  Input video (EDIT ONLY THIS)
 # --------------------------------------------------------------------------- #
-VIDEO_PATH = Path(r"E:\VS Code Folders\i3d\videos\vid_772.mp4")
+VIDEO_PATH = Path(r"C:\Users\littl\Downloads\Screen Recording 2025-07-16 164803 (3).mov")
 
 # --------------------------------------------------------------------------- #
 # 2.  Auto‑generate output paths

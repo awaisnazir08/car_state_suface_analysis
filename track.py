@@ -4,6 +4,9 @@ from ultralytics import YOLO
 # To use a tracker, you might need to install `filterpy`
 # pip install filterpy
 from collections import defaultdict
+import torch
+
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # A simple bounding box tracker (like a simplified SORT)
 # This helps maintain a consistent motion analysis for a car across frames
@@ -29,12 +32,12 @@ class SimpleTracker:
 # --- Configuration ---
 # Use a raw string or forward slashes for Windows paths
 MODEL_PATH = r"E:\RCN\model\yolo11l_08-02-2025_best.pt" 
-VIDEO_PATH = r"E:\VS Code Folders\i3d\videos\vid_772.mp4"
+VIDEO_PATH = r"C:\Users\littl\Downloads\Screen Recording 2025-07-16 164803 (2).mov"
 MOVEMENT_THRESHOLD = 1.5  # Tunable: Average pixel movement to be considered "moving"
 
 # --- Initialization ---
 # Load YOLOv8 model
-model = YOLO(MODEL_PATH, task='detect')
+model = YOLO(MODEL_PATH, task='detect').to(device)
 cap = cv2.VideoCapture(VIDEO_PATH)
 tracker = SimpleTracker()
 

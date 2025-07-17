@@ -26,8 +26,8 @@ class SimpleTracker:
 # --- Configuration ---
 # Use a raw string or forward slashes for Windows paths
 MODEL_PATH = r"E:\RCN\model\yolo11l_08-02-2025_best.pt"
-VIDEO_PATH = r"Ralph1.-8.091613814046736,41.52594138988471.1741337616.r.mp4"
-MOVEMENT_THRESHOLD = 1.5  # Tunable: Average pixel movement to be considered "moving"
+VIDEO_PATH = r"C:\Users\littl\Downloads\Screen Recording 2025-07-16 164803 (4).mov"
+MOVEMENT_THRESHOLD = 2.0  # Tunable: Average pixel movement to be considered "moving"
 
 # --- Initialization ---
 # Load YOLOv8 model
