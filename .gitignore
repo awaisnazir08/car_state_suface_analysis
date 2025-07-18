@@ -26,3 +26,10 @@ crash_data
 car_crash_data.csv
 crashes
 crip_crash_results.zip
+spin_data
+car_spin_data.csv
+car_crash_data copy.csv
+*.csv
+*.mp4
+*.mov
+*.png
