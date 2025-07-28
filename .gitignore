@@ -33,3 +33,6 @@ car_crash_data copy.csv
 *.mp4
 *.mov
 *.png
+*.npy
+jump_data
+jumps
