@@ -36,3 +36,4 @@ car_crash_data copy.csv
 *.npy
 jump_data
 jumps
+logistic_crash_model.pkl
